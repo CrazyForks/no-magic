@@ -1,6 +1,6 @@
 # Learning Path
 
-A structured guide through all 30 no-magic implementations. Pick a track based on your interest, check off scripts as you complete them, and build intuition for how modern AI/ML systems work under the hood.
+A structured guide through all 41 no-magic implementations. Pick a track based on your interest, check off scripts as you complete them, and build intuition for how modern AI/ML systems work under the hood.
 
 ## How to Use This Guide
 
@@ -19,7 +19,7 @@ A structured guide through all 30 no-magic implementations. Pick a track based o
 | 3. Deep Dive: Modern Inference | Making models fast and small | ~5 hrs |
 | 4. Deep Dive: Generative Models | How models create new data | ~4 hrs |
 | 5. Deep Dive: Retrieval & Search | Connecting models to external knowledge | ~3 hrs |
-| 6. Full Curriculum | All 30 scripts, dependency-ordered | ~20 hrs |
+| 6. Full Curriculum | All 41 scripts, dependency-ordered | ~20 hrs |
 
 ---
 
@@ -248,7 +248,7 @@ Connecting models to external knowledge. This track covers how to represent text
 
 ## Track 6: Full Curriculum (~20 hrs)
 
-All 30 scripts in dependency-respecting order. Grouped by conceptual cluster with milestone markers.
+All 41 scripts in dependency-respecting order. Grouped by conceptual cluster with milestone markers.
 
 ### Milestone 1: Text Representation (1.5 hrs)
 

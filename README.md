@@ -17,7 +17,7 @@
 
 **Because `model.fit()` isn't an explanation.**
 
-<video src="https://github.com/user-attachments/assets/b42b3b7b-6cc0-404a-a7ba-86a193a181a5" width="100%" autoplay loop muted playsinline></video>
+<video src="https://github.com/user-attachments/assets/f107ed4c-6905-4063-b3f6-a4a3c2f16c8e" width="100%" autoplay loop muted playsinline></video>
 
 ---
 
@@ -228,7 +228,7 @@ sudo apt-get install -y libcairo2-dev libpango1.0-dev ffmpeg gifsicle
 **Using the Python renderer** (`render_all.py`):
 
 ```bash
-# Render all 30 scenes — full 1080p60 MP4 + 480p GIF previews
+# Render all scenes — full 1080p60 MP4 + 480p GIF previews
 python videos/render_all.py
 
 # Render specific scenes only
@@ -352,6 +352,39 @@ microreact.py         → How agents reason with tools
 ```
 
 Each tier's README has the full algorithm list with measured run times for that category.
+
+## Learning Resources
+
+### Challenges
+
+"Predict the behavior" exercises that test your understanding of the algorithms. 5 challenges covering attention, GPT, GAN, DPO, and optimizer edge cases. Each challenge presents a code snippet and asks you to reason about the output before running it.
+
+See [`challenges/README.md`](challenges/README.md) for the full challenge set.
+
+### Flashcards
+
+Anki-compatible flashcard decks for spaced repetition review. 147 cards across 3 tiers (foundations, alignment, systems), covering key concepts, equations, and design decisions from every script.
+
+```bash
+# Generate the Anki deck
+python resources/flashcards/generate_anki.py
+```
+
+See [`resources/flashcards/`](resources/flashcards/) for the raw card data and generation script.
+
+### Learning Path
+
+Structured tracks for different goals — 6 learning tracks ranging from weekend sprints to a full 20-hour curriculum. Each track orders scripts by conceptual dependency and includes time estimates, prerequisites, and milestone markers.
+
+See [`LEARNING_PATH.md`](LEARNING_PATH.md) for the full guide.
+
+## Translations
+
+Comment translations for 6 languages: Spanish, Portuguese, Chinese, Japanese, Korean, and Hindi. The code stays in English — only comments, docstrings, section headers, and print statements are translated.
+
+See [`TRANSLATIONS.md`](TRANSLATIONS.md) for full status and contributor guide.
+
+Want to help translate? See the [translation guide](translations/README.md).
 
 ## Dependency Graph
 

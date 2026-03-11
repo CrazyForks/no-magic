@@ -2,7 +2,7 @@
 
 no-magic scripts teach algorithms through code comments. Translating those comments into other languages makes this resource accessible to engineers worldwide who think more fluently in their native language.
 
-This initiative translates **comments, docstrings, section headers, and print statements** in all 30 scripts. The code itself stays in English — variable names, function names, and logic are universal.
+This initiative translates **comments, docstrings, section headers, and print statements** in all 41 scripts. The code itself stays in English — variable names, function names, and logic are universal.
 
 ---
 
@@ -10,12 +10,12 @@ This initiative translates **comments, docstrings, section headers, and print st
 
 | Language | Locale | Status | Maintainer | Progress |
 |----------|--------|--------|------------|----------|
-| Spanish | `es` | :red_circle: Not Started | TBD | 0/30 scripts |
-| Brazilian Portuguese | `pt-BR` | :red_circle: Not Started | TBD | 0/30 scripts |
-| Simplified Chinese | `zh-CN` | :red_circle: Not Started | TBD | 0/30 scripts |
-| Japanese | `ja` | :red_circle: Not Started | TBD | 0/30 scripts |
-| Korean | `ko` | :red_circle: Not Started | TBD | 0/30 scripts |
-| Hindi | `hi` | :red_circle: Not Started | TBD | 0/30 scripts |
+| Spanish | `es` | :red_circle: Not Started | TBD | 0/41 scripts |
+| Brazilian Portuguese | `pt-BR` | :red_circle: Not Started | TBD | 0/41 scripts |
+| Simplified Chinese | `zh-CN` | :red_circle: Not Started | TBD | 0/41 scripts |
+| Japanese | `ja` | :red_circle: Not Started | TBD | 0/41 scripts |
+| Korean | `ko` | :red_circle: Not Started | TBD | 0/41 scripts |
+| Hindi | `hi` | :red_circle: Not Started | TBD | 0/41 scripts |
 
 ---
 
