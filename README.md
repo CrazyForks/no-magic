@@ -510,6 +510,16 @@ I'm not claiming to have hand-typed every algorithm from scratch. The value of t
 
 This is how I build in 2026. I'd rather be upfront about it.
 
+## Star History
+
+<a href="https://www.star-history.com/?repos=Mathews-Tom%2Fno-magic&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&theme=dark&legend=top-left&v=2&new=2" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&legend=top-left&v=2&new=2" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&legend=top-left&v=2&new=2" />
+ </picture>
+</a>
+
 ## Contributing
 
 Contributions are welcome, but the constraints are non-negotiable. See `CONTRIBUTING.md` for the full guidelines. The short version:
