@@ -1,6 +1,6 @@
 # Learning Path
 
-A structured guide through all 41 no-magic implementations. Pick a track based on your interest, check off scripts as you complete them, and build intuition for how modern AI/ML systems work under the hood.
+A structured guide through all 44 no-magic implementations. Pick a track based on your interest, check off scripts as you complete them, and build intuition for how modern AI/ML systems work under the hood.
 
 ## How to Use This Guide
 
@@ -16,10 +16,10 @@ A structured guide through all 41 no-magic implementations. Pick a track based o
 |-------|-------|------|
 | 1. Weekend Sprint: Transformers | Tokenization through attention | ~4 hrs |
 | 2. Weekend Sprint: Alignment | Steering model behavior post-training | ~3 hrs |
-| 3. Deep Dive: Modern Inference | Making models fast and small | ~5 hrs |
+| 3. Deep Dive: Modern Inference | Making models fast and small | ~7 hrs |
 | 4. Deep Dive: Generative Models | How models create new data | ~4 hrs |
 | 5. Deep Dive: Retrieval & Search | Connecting models to external knowledge | ~3 hrs |
-| 6. Full Curriculum | All 41 scripts, dependency-ordered | ~20 hrs |
+| 6. Full Curriculum | All 44 scripts, dependency-ordered | ~22 hrs |
 
 ---
 
@@ -118,7 +118,7 @@ How to steer a pretrained model's behavior. This track covers parameter-efficien
 
 ---
 
-## Track 3: Deep Dive — Modern Inference (~5 hrs)
+## Track 3: Deep Dive — Modern Inference (~7 hrs)
 
 Making models fast and small. This track covers every major inference optimization: efficient attention patterns, positional encoding, KV caching, memory management, quantization, decoding strategies, and state-space models.
 
@@ -180,6 +180,27 @@ Making models fast and small. This track covers every major inference optimizati
 - **Builds on:** `microgpt` (sequence modeling baseline for comparison).
 - **Key moment:** The dual-mode computation — the same SSM parameters support both a parallel convolution mode (fast training) and a sequential recurrence mode (fast inference), unified by the same math.
 - **Time:** 35 min
+- [ ] Completed
+
+**9. `03-systems/microdiscretize.py`**
+- **You'll learn:** How Euler, ZOH, and trapezoidal discretization turn continuous-time SSM equations into discrete recurrences, and why each method creates different stability properties and inductive biases.
+- **Builds on:** `microssm` (SSM recurrence mechanics).
+- **Key moment:** The stability table — Euler diverges at large delta while ZOH/trapezoidal remain bounded for any step size, because exp() maps the entire negative real line to (0,1).
+- **Time:** 40 min
+- [ ] Completed
+
+**10. `03-systems/microcomplexssm.py`**
+- **You'll learn:** How complex-valued SSM eigenvalues enable rotation (not just decay), why this is mathematically identical to applying data-dependent RoPE rotation matrices, and why real-only SSMs fail at parity.
+- **Builds on:** `microssm` (SSM state transitions), `microrope` (rotation matrices, helpful but not required).
+- **Key moment:** The equivalence proof — complex and real+RoPE forward passes produce identical outputs to floating-point precision, proving that complex multiply IS 2x2 rotation.
+- **Time:** 40 min
+- [ ] Completed
+
+**11. `03-systems/microroofline.py`**
+- **You'll learn:** How the roofline model classifies operations as memory-bound or compute-bound, and why MIMO SSM state updates (matmul) outperform SISO (outer product) on GPUs despite doing 11x more FLOPs.
+- **Builds on:** `microssm` (SSM state updates), `microflash` (hardware-aware algorithm design, helpful but not required).
+- **Key moment:** The ASCII roofline plot — seeing SISO at AI≈2 (0.7% GPU utilization) versus MIMO at AI≈32 (shifting toward compute-bound) makes the hardware argument visceral.
+- **Time:** 40 min
 - [ ] Completed
 
 ---
@@ -246,9 +267,9 @@ Connecting models to external knowledge. This track covers how to represent text
 
 ---
 
-## Track 6: Full Curriculum (~20 hrs)
+## Track 6: Full Curriculum (~22 hrs)
 
-All 41 scripts in dependency-respecting order. Grouped by conceptual cluster with milestone markers.
+All 44 scripts in dependency-respecting order. Grouped by conceptual cluster with milestone markers.
 
 ### Milestone 1: Text Representation (1.5 hrs)
 
@@ -363,3 +384,13 @@ State-space models, gradient checkpointing, and parallelism — the frontier of 
 | 28 | `03-systems/microssm.py` | 35 min | - [ ] |
 | 29 | `03-systems/microcheckpoint.py` | 30 min | - [ ] |
 | 30 | `03-systems/microparallel.py` | 30 min | - [ ] |
+
+### Milestone 13: Mamba-3 Deep Dive (2 hrs)
+
+The SSM frontier — discretization methods, complex eigenvalue dynamics, and hardware-aware algorithm design from the Mamba-3 paper.
+
+| # | Script | Time | Checkbox |
+|---|--------|------|----------|
+| 31 | `03-systems/microdiscretize.py` | 40 min | - [ ] |
+| 32 | `03-systems/microcomplexssm.py` | 40 min | - [ ] |
+| 33 | `03-systems/microroofline.py` | 40 min | - [ ] |

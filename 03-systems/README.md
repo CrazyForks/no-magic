@@ -18,6 +18,9 @@ Measured on Apple M-series, Python 3.12. Times are wall-clock.
 | `microquant.py`      | Weight quantization (INT8, INT4, per-channel vs. per-tensor)      | 1m 22s | Pass   | ![Preview](../videos/previews/microquant.gif)      |
 | `microrope.py`       | Rotary Position Embedding (RoPE) — position via rotation matrices | < 1s   | Pass   | ![Preview](../videos/previews/microrope.gif)       |
 | `microssm.py`        | State Space Models (Mamba-style) — linear-time sequence modeling  | 0m 34s | Pass   | ![Preview](../videos/previews/microssm.gif)        |
+| `microcomplexssm.py` | Complex SSM equivalence — complex eigenvalues = real + RoPE       | < 1m   | Pass   | ![Preview](../videos/previews/microcomplexssm.gif) |
+| `microdiscretize.py`  | Discretization methods — Euler, ZOH, Trapezoidal comparison       | < 1m   | Pass   | ![Preview](../videos/previews/microdiscretize.gif) |
+| `microroofline.py`   | Roofline model — SISO vs MIMO hardware utilization                | < 1m   | Pass   | ![Preview](../videos/previews/microroofline.gif)   |
 
 ### Forward-Pass Scripts
 
@@ -50,5 +53,8 @@ microcheckpoint.py    → How to train deeper models by recomputing activations
 microparallel.py      → How models get split across devices
 microquant.py         → How models get compressed (INT8/INT4)
 microssm.py           → How Mamba models bypass attention entirely
+microdiscretize.py    → How discretization shapes what SSMs can learn
+microcomplexssm.py    → How complex eigenvalues enable rotation (parity)
+microroofline.py      → Why more FLOPs can be faster (SISO → MIMO)
 microbeam.py          → How decoding strategies shape output quality
 ```
