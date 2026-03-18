@@ -60,6 +60,9 @@ SCENE_MAP = {
     "scene_microspeculative.py": "SpeculativeScene",
     "scene_micromcts.py": "MCTSScene",
     "scene_microreact.py": "ReActScene",
+    "scene_microcomplexssm.py": "ComplexSSMScene",
+    "scene_microdiscretize.py": "DiscretizeScene",
+    "scene_microroofline.py": "RooflineScene",
 }
 
 QUALITY_MAP = {

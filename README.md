@@ -4,7 +4,7 @@
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/github/license/Mathews-Tom/no-magic?style=flat-square)
-![Algorithms](https://img.shields.io/badge/algorithms-41-orange?style=flat-square)
+![Algorithms](https://img.shields.io/badge/algorithms-44-orange?style=flat-square)
 ![Version](https://img.shields.io/badge/version-v2.0.0-blue?style=flat-square)
 ![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen?style=flat-square)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
@@ -134,7 +134,7 @@ Every script in this repository is an **executable proof** that these algorithms
 </details>
 
 <details>
-<summary><h3>03 — Systems & Inference (13 scripts)</h3></summary>
+<summary><h3>03 — Systems & Inference (16 scripts)</h3></summary>
 <table>
 <tr>
 <td align="center"><a href="03-systems/microattention.py"><b>Attention Mechanism</b></a><br/>
@@ -184,6 +184,17 @@ Every script in this repository is an **executable proof** that these algorithms
 <td align="center"><a href="03-systems/microspeculative.py"><b>Speculative Decoding</b></a><br/>
 <img src="videos/previews/microspeculative.gif" width="280"/><br/>
 <sub>Draft fast, verify once</sub></td>
+<td align="center"><a href="03-systems/microcomplexssm.py"><b>Complex SSM</b></a><br/>
+<img src="videos/previews/microcomplexssm.gif" width="280"/><br/>
+<sub>Complex eigenvalues = real + RoPE</sub></td>
+<td align="center"><a href="03-systems/microdiscretize.py"><b>Discretization</b></a><br/>
+<img src="videos/previews/microdiscretize.gif" width="280"/><br/>
+<sub>Euler vs ZOH vs Trapezoidal</sub></td>
+</tr>
+<tr>
+<td align="center"><a href="03-systems/microroofline.py"><b>Roofline Model</b></a><br/>
+<img src="videos/previews/microroofline.gif" width="280"/><br/>
+<sub>SISO → MIMO hardware utilization</sub></td>
 <td></td>
 <td></td>
 </tr>
@@ -296,9 +307,9 @@ Methods for steering, fine-tuning, and aligning models after pretraining. LoRA, 
 
 See [`02-alignment/README.md`](02-alignment/README.md) for the full algorithm list, timing data, and roadmap.
 
-### 03 — Systems & Inference (13 scripts)
+### 03 — Systems & Inference (16 scripts)
 
-The engineering that makes models fast, small, and deployable. Attention variants, Flash Attention, KV-cache, PagedAttention, RoPE, quantization, beam search, checkpointing, parallelism, SSMs, vector search, BM25, and speculative decoding.
+The engineering that makes models fast, small, and deployable. Attention variants, Flash Attention, KV-cache, PagedAttention, RoPE, quantization, beam search, checkpointing, parallelism, SSMs, vector search, BM25, speculative decoding, complex SSM equivalence, discretization methods, and roofline analysis.
 
 See [`03-systems/README.md`](03-systems/README.md) for the full algorithm list, timing data, and roadmap.
 
@@ -348,6 +359,9 @@ microrope.py          → How position gets encoded through rotation
 microquant.py         → How models get compressed
 microflash.py         → How attention gets fast
 microssm.py           → How Mamba models bypass attention entirely
+microdiscretize.py    → How discretization shapes what SSMs can learn
+microcomplexssm.py    → How complex eigenvalues enable rotation (parity)
+microroofline.py      → Why more FLOPs can be faster (SISO → MIMO)
 microreact.py         → How agents reason with tools
 ```
 
@@ -357,13 +371,13 @@ Each tier's README has the full algorithm list with measured run times for that 
 
 ### Challenges
 
-"Predict the behavior" exercises that test your understanding of the algorithms. 5 challenges covering attention, GPT, GAN, DPO, and optimizer edge cases. Each challenge presents a code snippet and asks you to reason about the output before running it.
+"Predict the behavior" exercises that test your understanding of the algorithms. 8 challenges covering attention, GPT, GAN, DPO, optimizer edge cases, discretization, complex SSMs, and roofline analysis. Each challenge presents a code snippet and asks you to reason about the output before running it.
 
 See [`challenges/README.md`](challenges/README.md) for the full challenge set.
 
 ### Flashcards
 
-Anki-compatible flashcard decks for spaced repetition review. 147 cards across 3 tiers (foundations, alignment, systems), covering key concepts, equations, and design decisions from every script.
+Anki-compatible flashcard decks for spaced repetition review. 162 cards across 3 tiers (foundations, alignment, systems), covering key concepts, equations, and design decisions from every script.
 
 ```bash
 # Generate the Anki deck
@@ -380,7 +394,7 @@ See [`LEARNING_PATH.md`](LEARNING_PATH.md) for the full guide.
 
 ### Offline Book (EPUB)
 
-All 41 scripts compiled into a single EPUB with table of contents, thesis excerpts, tradeoff sections, and full annotated source. Readable on any e-reader, tablet, or phone.
+All 44 scripts compiled into a single EPUB with table of contents, thesis excerpts, tradeoff sections, and full annotated source. Readable on any e-reader, tablet, or phone.
 
 ```bash
 # Requires pandoc: brew install pandoc (macOS) or apt install pandoc
@@ -449,6 +463,9 @@ graph LR
     CKPT["Checkpointing"]
     PAR["Parallelism"]
     SSM["SSM / Mamba"]
+    CSSM["Complex SSM"]
+    DISC["Discretize"]
+    ROOF["Roofline"]
   end
 
   %% --- Foundation internals ---
@@ -483,13 +500,20 @@ graph LR
   ATTN --> ROPE
   KV --> PAGED
 
+  %% --- SSM family connections ---
+  SSM --> CSSM
+  SSM --> DISC
+  SSM --> ROOF
+  ROPE -.-> CSSM
+  FLASH -.-> ROOF
+
   %% --- Cross-tier into QLoRA ---
   QUANT --> QLORA
 
   %% --- Apply styles ---
   class TOK,EMB,OPT,RNN,CONV,GPT,BERT,RAG,DIFF,VAE,GAN foundations
   class BN,DROP,LORA,QLORA,DPO,REINF,PPO,GRPO,MOE alignment
-  class ATTN,FLASH,ROPE,KV,PAGED,QUANT,BEAM,CKPT,PAR,SSM systems
+  class ATTN,FLASH,ROPE,KV,PAGED,QUANT,BEAM,CKPT,PAR,SSM,CSSM,DISC,ROOF systems
 ```
 
 **Legend:** <span style="color:#4a90d9">Foundations</span> · <span style="color:#e8834a">Alignment</span> · <span style="color:#5bb55b">Systems</span> — Solid arrows = strong prerequisite, dashed arrows = conceptual comparison.
