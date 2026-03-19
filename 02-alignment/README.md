@@ -8,15 +8,15 @@ Measured on Apple M-series, Python 3.12. Times are wall-clock.
 
 | Script              | Algorithm                                                             | Time   | Status | Video                                             |
 | ------------------- | --------------------------------------------------------------------- | ------ | ------ | ------------------------------------------------- |
-| `microbatchnorm.py` | Batch Normalization — internal covariate shift and running statistics | 0m 34s | Pass   | ![Preview](../videos/previews/microbatchnorm.gif) |
-| `microdpo.py`       | Direct Preference Optimization                                        | 2m 42s | Pass   | ![Preview](../videos/previews/microdpo.gif)       |
-| `microdropout.py`   | Dropout, weight decay, and early stopping as regularization           | 3m 21s | Pass   | ![Preview](../videos/previews/microdropout.gif)   |
-| `microgrpo.py`      | Group Relative Policy Optimization (DeepSeek's RLHF simplification)   | 0m 23s | Pass   | ![Preview](../videos/previews/microgrpo.gif)      |
-| `microlora.py`      | Low-Rank Adaptation (LoRA) fine-tuning                                | 2m 32s | Pass   | ![Preview](../videos/previews/microlora.gif)      |
-| `micromoe.py`       | Mixture of Experts with sparse routing (hybrid autograd)              | 0m 06s | Pass   | ![Preview](../videos/previews/micromoe.gif)       |
-| `microppo.py`       | Proximal Policy Optimization for RLHF (hybrid autograd)               | 0m 34s | Pass   | ![Preview](../videos/previews/microppo.gif)       |
-| `microqlora.py`     | QLoRA — fine-tuning 4-bit quantized models with LoRA adapters         | 2m 27s | Pass   | ![Preview](../videos/previews/microqlora.gif)     |
-| `microreinforce.py` | REINFORCE — vanilla policy gradient with baseline                     | 5m 39s | Pass   | ![Preview](../videos/previews/microreinforce.gif) |
+| `microbatchnorm.py` | Batch Normalization — internal covariate shift and running statistics | 0m 34s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbatchnorm.gif) |
+| `microdpo.py`       | Direct Preference Optimization                                        | 2m 42s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdpo.gif)       |
+| `microdropout.py`   | Dropout, weight decay, and early stopping as regularization           | 3m 21s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdropout.gif)   |
+| `microgrpo.py`      | Group Relative Policy Optimization (DeepSeek's RLHF simplification)   | 0m 23s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microgrpo.gif)      |
+| `microlora.py`      | Low-Rank Adaptation (LoRA) fine-tuning                                | 2m 32s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microlora.gif)      |
+| `micromoe.py`       | Mixture of Experts with sparse routing (hybrid autograd)              | 0m 06s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micromoe.gif)       |
+| `microppo.py`       | Proximal Policy Optimization for RLHF (hybrid autograd)               | 0m 34s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microppo.gif)       |
+| `microqlora.py`     | QLoRA — fine-tuning 4-bit quantized models with LoRA adapters         | 2m 27s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microqlora.gif)     |
+| `microreinforce.py` | REINFORCE — vanilla policy gradient with baseline                     | 5m 39s | Pass   | ![Preview](https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microreinforce.gif) |
 
 ### Hybrid Autograd Scripts
 
