@@ -226,6 +226,5 @@ names.txt
 *.cache
 data/
 
-# Video rendering artifacts (Manim output)
-videos/renders/
+# Manim output (if rendered locally)
 media/
