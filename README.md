@@ -1,16 +1,16 @@
-[![no-magic](./assets/banner.png)](https://github.com/Mathews-Tom/no-magic)
+[![no-magic](./assets/banner.png)](https://github.com/no-magic-ai/no-magic)
 
 ---
 
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue?style=flat-square&logo=python&logoColor=white)
-![License: MIT](https://img.shields.io/github/license/Mathews-Tom/no-magic?style=flat-square)
+![License: MIT](https://img.shields.io/github/license/no-magic-ai/no-magic?style=flat-square)
 ![Algorithms](https://img.shields.io/badge/algorithms-47-orange?style=flat-square)
 ![Version](https://img.shields.io/badge/version-v2.0.0-blue?style=flat-square)
 ![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen?style=flat-square)
 ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen?style=flat-square)
-![GitHub stars](https://img.shields.io/github/stars/Mathews-Tom/no-magic?style=flat-square)
-![Last Commit](https://img.shields.io/github/last-commit/Mathews-Tom/no-magic?style=flat-square)
-![CI](https://github.com/Mathews-Tom/no-magic/actions/workflows/verify.yml/badge.svg)
+![GitHub stars](https://img.shields.io/github/stars/no-magic-ai/no-magic?style=flat-square)
+![Last Commit](https://img.shields.io/github/last-commit/no-magic-ai/no-magic?style=flat-square)
+![CI](https://github.com/no-magic-ai/no-magic/actions/workflows/verify.yml/badge.svg)
 
 ---
 
@@ -35,54 +35,54 @@ Every script in this repository is an **executable proof** that these algorithms
 <table>
 <tr>
 <td align="center"><a href="01-foundations/microgpt.py"><b>Autoregressive GPT</b></a><br/>
-<img src="videos/previews/microgpt.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microgpt.gif" width="280"/><br/>
 <sub>Token-by-token generation</sub></td>
 <td align="center"><a href="01-foundations/micrornn.py"><b>RNN vs GRU</b></a><br/>
-<img src="videos/previews/micrornn.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micrornn.gif" width="280"/><br/>
 <sub>Vanishing gradients and gating</sub></td>
 <td align="center"><a href="01-foundations/microlstm.py"><b>LSTM</b></a><br/>
-<img src="videos/previews/microlstm.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microlstm.gif" width="280"/><br/>
 <sub>4-gate memory highway</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="01-foundations/microtokenizer.py"><b>BPE Tokenizer</b></a><br/>
-<img src="videos/previews/microtokenizer.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microtokenizer.gif" width="280"/><br/>
 <sub>Iterative pair merging → vocabulary</sub></td>
 <td align="center"><a href="01-foundations/microembedding.py"><b>Word Embeddings</b></a><br/>
-<img src="videos/previews/microembedding.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microembedding.gif" width="280"/><br/>
 <sub>Contrastive learning → semantic clusters</sub></td>
 <td align="center"><a href="01-foundations/microrag.py"><b>RAG Pipeline</b></a><br/>
-<img src="videos/previews/microrag.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microrag.gif" width="280"/><br/>
 <sub>Retrieve → augment → generate</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="01-foundations/microbert.py"><b>BERT</b></a><br/>
-<img src="videos/previews/microbert.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbert.gif" width="280"/><br/>
 <sub>Bidirectional attention + [MASK] prediction</sub></td>
 <td align="center"><a href="01-foundations/microconv.py"><b>Convolutional Net</b></a><br/>
-<img src="videos/previews/microconv.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microconv.gif" width="280"/><br/>
 <sub>Sliding kernels → feature maps</sub></td>
 <td align="center"><a href="01-foundations/microresnet.py"><b>ResNet</b></a><br/>
-<img src="videos/previews/microresnet.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microresnet.gif" width="280"/><br/>
 <sub>F(x) + x = gradient highway</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="01-foundations/microvit.py"><b>Vision Transformer</b></a><br/>
-<img src="videos/previews/microvit.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microvit.gif" width="280"/><br/>
 <sub>Image patches as tokens</sub></td>
 <td align="center"><a href="01-foundations/microdiffusion.py"><b>Diffusion</b></a><br/>
-<img src="videos/previews/microdiffusion.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdiffusion.gif" width="280"/><br/>
 <sub>Noise → data via iterative denoising</sub></td>
 <td align="center"><a href="01-foundations/microvae.py"><b>VAE</b></a><br/>
-<img src="videos/previews/microvae.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microvae.gif" width="280"/><br/>
 <sub>Encode → sample z → decode</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="01-foundations/microgan.py"><b>GAN</b></a><br/>
-<img src="videos/previews/microgan.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microgan.gif" width="280"/><br/>
 <sub>Generator vs discriminator minimax</sub></td>
 <td align="center"><a href="01-foundations/microoptimizer.py"><b>Optimizers</b></a><br/>
-<img src="videos/previews/microoptimizer.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microoptimizer.gif" width="280"/><br/>
 <sub>SGD vs Momentum vs Adam convergence</sub></td>
 <td></td>
 </tr>
@@ -97,35 +97,35 @@ Every script in this repository is an **executable proof** that these algorithms
 <table>
 <tr>
 <td align="center"><a href="02-alignment/microlora.py"><b>LoRA Fine-tuning</b></a><br/>
-<img src="videos/previews/microlora.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microlora.gif" width="280"/><br/>
 <sub>Low-rank weight injection</sub></td>
 <td align="center"><a href="02-alignment/microqlora.py"><b>QLoRA</b></a><br/>
-<img src="videos/previews/microqlora.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microqlora.gif" width="280"/><br/>
 <sub>4-bit base + full-precision adapters</sub></td>
 <td align="center"><a href="02-alignment/microdpo.py"><b>DPO Alignment</b></a><br/>
-<img src="videos/previews/microdpo.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdpo.gif" width="280"/><br/>
 <sub>Preferred vs. rejected → policy update</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="02-alignment/microppo.py"><b>PPO (RLHF)</b></a><br/>
-<img src="videos/previews/microppo.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microppo.gif" width="280"/><br/>
 <sub>Clipped policy gradient for alignment</sub></td>
 <td align="center"><a href="02-alignment/microgrpo.py"><b>GRPO</b></a><br/>
-<img src="videos/previews/microgrpo.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microgrpo.gif" width="280"/><br/>
 <sub>Group-relative rewards, no critic</sub></td>
 <td align="center"><a href="02-alignment/microreinforce.py"><b>REINFORCE</b></a><br/>
-<img src="videos/previews/microreinforce.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microreinforce.gif" width="280"/><br/>
 <sub>Log P(a) × reward = gradient</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="02-alignment/micromoe.py"><b>Mixture of Experts</b></a><br/>
-<img src="videos/previews/micromoe.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micromoe.gif" width="280"/><br/>
 <sub>Sparse routing to specialist MLPs</sub></td>
 <td align="center"><a href="02-alignment/microbatchnorm.py"><b>Batch Normalization</b></a><br/>
-<img src="videos/previews/microbatchnorm.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbatchnorm.gif" width="280"/><br/>
 <sub>Normalize activations → stable training</sub></td>
 <td align="center"><a href="02-alignment/microdropout.py"><b>Dropout</b></a><br/>
-<img src="videos/previews/microdropout.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdropout.gif" width="280"/><br/>
 <sub>Kill neurons → prevent overfitting</sub></td>
 </tr>
 </table>
@@ -139,62 +139,62 @@ Every script in this repository is an **executable proof** that these algorithms
 <table>
 <tr>
 <td align="center"><a href="03-systems/microattention.py"><b>Attention Mechanism</b></a><br/>
-<img src="videos/previews/microattention.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microattention.gif" width="280"/><br/>
 <sub>Q·K<sup>T</sup> → softmax → weighted V</sub></td>
 <td align="center"><a href="03-systems/microflash.py"><b>Flash Attention</b></a><br/>
-<img src="videos/previews/microflash.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microflash.gif" width="280"/><br/>
 <sub>Tiled O(N) memory computation</sub></td>
 <td align="center"><a href="03-systems/microrope.py"><b>RoPE</b></a><br/>
-<img src="videos/previews/microrope.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microrope.gif" width="280"/><br/>
 <sub>Position via rotation matrices</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="03-systems/microkv.py"><b>KV-Cache</b></a><br/>
-<img src="videos/previews/microkv.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microkv.gif" width="280"/><br/>
 <sub>Memoize keys/values — stop recomputing</sub></td>
 <td align="center"><a href="03-systems/micropaged.py"><b>PagedAttention</b></a><br/>
-<img src="videos/previews/micropaged.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micropaged.gif" width="280"/><br/>
 <sub>OS-style paged KV-cache memory</sub></td>
 <td align="center"><a href="03-systems/microquant.py"><b>Quantization</b></a><br/>
-<img src="videos/previews/microquant.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microquant.gif" width="280"/><br/>
 <sub>Float32 → Int8 = 4x compression</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="03-systems/microbeam.py"><b>Beam Search</b></a><br/>
-<img src="videos/previews/microbeam.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbeam.gif" width="280"/><br/>
 <sub>Tree search with top-k pruning</sub></td>
 <td align="center"><a href="03-systems/microcheckpoint.py"><b>Checkpointing</b></a><br/>
-<img src="videos/previews/microcheckpoint.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microcheckpoint.gif" width="280"/><br/>
 <sub>O(n) → O(√n) memory via recompute</sub></td>
 <td align="center"><a href="03-systems/microparallel.py"><b>Model Parallelism</b></a><br/>
-<img src="videos/previews/microparallel.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microparallel.gif" width="280"/><br/>
 <sub>Tensor + pipeline across devices</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="03-systems/microssm.py"><b>State Space Models</b></a><br/>
-<img src="videos/previews/microssm.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microssm.gif" width="280"/><br/>
 <sub>Linear-time selective state transitions</sub></td>
 <td align="center"><a href="03-systems/microvectorsearch.py"><b>Vector Search</b></a><br/>
-<img src="videos/previews/microvectorsearch.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microvectorsearch.gif" width="280"/><br/>
 <sub>Exact vs LSH approximate search</sub></td>
 <td align="center"><a href="03-systems/microbm25.py"><b>BM25</b></a><br/>
-<img src="videos/previews/microbm25.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbm25.gif" width="280"/><br/>
 <sub>TF → TF-IDF → BM25 evolution</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="03-systems/microspeculative.py"><b>Speculative Decoding</b></a><br/>
-<img src="videos/previews/microspeculative.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microspeculative.gif" width="280"/><br/>
 <sub>Draft fast, verify once</sub></td>
 <td align="center"><a href="03-systems/microcomplexssm.py"><b>Complex SSM</b></a><br/>
-<img src="videos/previews/microcomplexssm.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microcomplexssm.gif" width="280"/><br/>
 <sub>Complex eigenvalues = real + RoPE</sub></td>
 <td align="center"><a href="03-systems/microdiscretize.py"><b>Discretization</b></a><br/>
-<img src="videos/previews/microdiscretize.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microdiscretize.gif" width="280"/><br/>
 <sub>Euler vs ZOH vs Trapezoidal</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="03-systems/microroofline.py"><b>Roofline Model</b></a><br/>
-<img src="videos/previews/microroofline.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microroofline.gif" width="280"/><br/>
 <sub>SISO → MIMO hardware utilization</sub></td>
 <td></td>
 <td></td>
@@ -208,21 +208,21 @@ Every script in this repository is an **executable proof** that these algorithms
 <table>
 <tr>
 <td align="center"><a href="04-agents/micromcts.py"><b>Monte Carlo Tree Search</b></a><br/>
-<img src="videos/previews/micromcts.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micromcts.gif" width="280"/><br/>
 <sub>UCB1 tree search + random rollouts</sub></td>
 <td align="center"><a href="04-agents/microreact.py"><b>ReAct Agent</b></a><br/>
-<img src="videos/previews/microreact.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microreact.gif" width="280"/><br/>
 <sub>Thought → Action → Observation</sub></td>
 <td align="center"><a href="04-agents/microbandit.py"><b>Multi-Armed Bandits</b></a><br/>
-<img src="videos/previews/microbandit.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microbandit.gif" width="280"/><br/>
 <sub>ε-greedy vs UCB1 vs Thompson Sampling</sub></td>
 </tr>
 <tr>
 <td align="center"><a href="04-agents/microminimax.py"><b>Minimax + Alpha-Beta</b></a><br/>
-<img src="videos/previews/microminimax.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/microminimax.gif" width="280"/><br/>
 <sub>Adversarial search with pruning</sub></td>
 <td align="center"><a href="04-agents/micromemory.py"><b>Memory-Augmented Network</b></a><br/>
-<img src="videos/previews/micromemory.gif" width="280"/><br/>
+<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micromemory.gif" width="280"/><br/>
 <sub>Differentiable read/write heads</sub></td>
 <td></td>
 </tr>
@@ -230,56 +230,8 @@ Every script in this repository is an **executable proof** that these algorithms
 
 </details>
 
-> All algorithms have animated visualizations. Full 1080p60 videos in [Releases](https://github.com/Mathews-Tom/no-magic/releases).
-> Video source scenes in [`videos/scenes/`](videos/scenes/) — built with [Manim](https://www.manim.community/).
-
-### Rendering Videos Locally
-
-All visualizations can be rendered from source. System dependencies: `cairo`, `pango`, `ffmpeg`, and optionally `gifsicle` for GIF optimization.
-
-```bash
-# Install Manim (one-time)
-pip install -r videos/requirements.txt
-
-# macOS system deps (one-time)
-brew install cairo pango ffmpeg gifsicle
-
-# Ubuntu/Debian system deps (one-time)
-sudo apt-get install -y libcairo2-dev libpango1.0-dev ffmpeg gifsicle
-```
-
-**Using the Python renderer** (`render_all.py`):
-
-```bash
-# Render all scenes — full 1080p60 MP4 + 480p GIF previews
-python videos/render_all.py
-
-# Render specific scenes only
-python videos/render_all.py microattention microgpt microlora
-
-# Full MP4s only (no GIFs)
-python videos/render_all.py --full-only
-
-# GIF previews only (faster)
-python videos/render_all.py --preview-only
-
-# Custom quality (low/medium/high/4k)
-python videos/render_all.py --quality medium
-
-# Skip GIF optimization step
-python videos/render_all.py --preview-only --skip-optimize
-```
-
-**Using the shell renderer** (`render.sh`):
-
-```bash
-bash videos/render.sh                    # all scenes (MP4 + GIF)
-bash videos/render.sh microattention     # single scene
-bash videos/render.sh --preview-only     # GIF previews only
-bash videos/render.sh --full-only        # MP4s only
-```
-
-Output lands in `videos/renders/` (MP4) and `videos/previews/` (GIF). Full rendering details in [`videos/README.md`](videos/README.md).
+> All algorithms have animated visualizations. Full 1080p60 videos in [Releases](https://github.com/no-magic-ai/no-magic/releases).
+> Visualization source and rendering: [no-magic-viz](https://github.com/no-magic-ai/no-magic-viz) — built with [Manim](https://www.manim.community/).
 
 ## Philosophy
 
@@ -335,7 +287,7 @@ See [`04-agents/README.md`](04-agents/README.md) for the full algorithm list, ti
 
 ```bash
 # Clone the repository
-git clone https://github.com/Mathews-Tom/no-magic.git
+git clone https://github.com/no-magic-ai/no-magic.git
 cd no-magic
 
 # Pick any script and run it
@@ -414,7 +366,7 @@ bash scripts/generate-epub.sh
 # Output: build/no-magic.epub
 ```
 
-A pre-built copy is included in every [release](https://github.com/Mathews-Tom/no-magic/releases).
+A pre-built copy is included in every [release](https://github.com/no-magic-ai/no-magic/releases).
 
 ## Translations
 
@@ -567,9 +519,9 @@ This is how I build in 2026. I'd rather be upfront about it.
 
 <a href="https://www.star-history.com/?repos=Mathews-Tom%2Fno-magic&type=date&legend=top-left">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&theme=dark&legend=top-left&v=2&new=2" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&legend=top-left&v=2&new=2" />
-   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=Mathews-Tom/no-magic&type=date&legend=top-left&v=2&new=2" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=no-magic-ai/no-magic&type=date&theme=dark&legend=top-left&v=2&new=2" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=no-magic-ai/no-magic&type=date&legend=top-left&v=2&new=2" />
+   <img alt="Star History Chart" src="https://api.star-history.com/image?repos=no-magic-ai/no-magic&type=date&legend=top-left&v=2&new=2" />
  </picture>
 </a>
 

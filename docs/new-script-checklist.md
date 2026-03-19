@@ -62,9 +62,12 @@ Every item here must be completed before merging a new algorithm script. The 04-
 - [ ] Increment the script count in the correct tier `<summary>` tag (e.g., `"5 scripts" → "6 scripts"`, line ~207)
 - [ ] Add a `<td>` entry in the correct tier `<table>` block following the existing format:
   ```html
-  <td align="center"><a href="<tier>/micro<name>.py"><b>Algorithm Name</b></a><br/>
-  <img src="videos/previews/micro<name>.gif" width="280"/><br/>
-  <sub>One-line description</sub></td>
+  <td align="center">
+    <a href="<tier>/micro<name>.py"><b>Algorithm Name</b></a
+    ><br />
+    <img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micro<name>.gif" width="280" /><br />
+    <sub>One-line description</sub>
+  </td>
   ```
 - [ ] Update the tier description in the "What You'll Find Here" section if the tier's scope changed
 - [ ] Update the EPUB script count if it is mentioned
@@ -80,15 +83,14 @@ Every item here must be completed before merging a new algorithm script. The 04-
 - [ ] Confirm `scripts/run_benchmarks.py` SECTIONS list includes the script's tier directory
 - [ ] Run the benchmark: `python scripts/run_benchmarks.py micro<name>` and confirm it completes
 
-### Manim Visualization
+### Manim Visualization (in [no-magic-viz](https://github.com/no-magic-ai/no-magic-viz))
 
-- [ ] Create scene file: `videos/scenes/scene_micro<name>.py`
+- [ ] Create scene file: `scenes/scene_micro<name>.py` in the `no-magic-viz` repo
 - [ ] Inherit from `NoMagicScene` and implement `animate()`
-- [ ] Add entry to `SCENE_MAP` in `videos/render_all.py`
-- [ ] Render full MP4: `python videos/render_all.py micro<name> --full-only`
-- [ ] Render GIF preview: `python videos/render_all.py micro<name> --preview-only`
-- [ ] Confirm GIF exists at `videos/previews/micro<name>.gif`
-- [ ] Confirm the `<img src="videos/previews/micro<name>.gif">` tag in the README table entry resolves
+- [ ] Render locally: `bash scripts/render.sh micro<name>`
+- [ ] Confirm GIF preview exists at `previews/micro<name>.gif` in `no-magic-viz`
+- [ ] Commit and push the scene + GIF to `no-magic-viz`
+- [ ] Confirm the `<img src="https://raw.githubusercontent.com/no-magic-ai/no-magic-viz/main/previews/micro<name>.gif">` tag in the README resolves
 
 ### Learning Path (`LEARNING_PATH.md`)
 
